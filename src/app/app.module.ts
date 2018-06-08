@@ -6,12 +6,16 @@ import { HttpModule } from '@angular/http'
 import { AppComponent } from './app.component';
 import { ServerComponent } from './server/server.component';
 import { ServersComponent } from './servers/servers.component';
+import { WarningAlertComponent } from './warning-alert/warning-alert.component';
+import { WarningOkComponent } from './warning-ok/warning-ok.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ServerComponent,
-    ServersComponent
+    ServersComponent,
+    WarningAlertComponent,
+    WarningOkComponent
   ],
   imports: [
     BrowserModule,
