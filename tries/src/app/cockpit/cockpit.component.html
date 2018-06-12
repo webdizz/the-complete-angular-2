@@ -1,3 +1,9 @@
-<p>
-  cockpit works!
-</p>
+<hr>
+<div class="row">
+  <div class="col-xs-12">
+    <input class="form-controller" type="text" [(ngModel)]="newServerName">
+    <input class="form-controller" type="text" [(ngModel)]="newServerContent">
+    <button class="btn btn-primary" (click)="onAddServer()">Add Server</button>
+    <button class="btn btn-primary" (click)="onAddBluePrint()">Add BluePrint</button>
+  </div>
+</div>

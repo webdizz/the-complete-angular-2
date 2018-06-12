@@ -20,7 +20,10 @@
     </div>
   </div>
   <div class="row">
-    <app-cockpit></app-cockpit>
+    <app-cockpit
+      (serverCreated)="onServerAdded($event)"
+      (bluePrintCreated)="onBluePrintAdded($event)"
+      ></app-cockpit>
     <hr>
     <div class="row">
       <div class="col-xs-12">
