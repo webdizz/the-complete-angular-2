@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
 
 @Component({
   selector: 'app-server',
@@ -9,12 +9,15 @@ import { Component } from "@angular/core";
     }
   `]
 })
-export class ServerComponent {
+export class ServerComponent implements OnInit {
   serverId = 10;
   serverStatus = 'offline';
 
   constructor() {
     this.serverStatus = Math.random() > 0.5 ? 'online' : 'offline';
+  }
+  ngOnInit(): void {
+    throw new Error("Method not implemented.");
   }
 
   getServerStatus() {

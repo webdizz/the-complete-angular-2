@@ -11,6 +11,8 @@ export class AppComponent {
   showSecret = false
   log = []
 
+  serverElements = [{ type: 'server', name: 'TestServer', content: 'Just a test!' }]
+  
   onToggleDetails() {
     this.showSecret = !this.showSecret
     this.log.push(new Date())
